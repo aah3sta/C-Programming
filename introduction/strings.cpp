@@ -44,6 +44,24 @@ int main(){
     cout << myString.at(1); //second character
     cout << myString.at(myString.length() -1) << "\n";
 
+    //special characters
+    string txt1 = "We are the so-called \"Vikings\" from the north. It\'s us!";
+    cout << txt1 << "\n";
+
+    //user input strings
+    /*
+    string name;
+    cout << "Type your first name: ";
+    cin >> name; //only prints the first word given, none after the whitespace
+    cout << "Your name is " << name << "\n";
+    */
+
+    //using getline()
+    string myName;
+    cout << "Type your full name: ";
+    getline (cin, myName);
+    cout << "Your name is: " << myName;
+
     return 0;
 }
 

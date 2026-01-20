@@ -2,6 +2,7 @@
 using namespace std;
 
 #include <string>
+#include <cmath>
 
 int main(){
     //Arithmetic operators
@@ -46,6 +47,16 @@ int main(){
     /* Logical and && 
     Logical or ||
     Logical not !*/
+
+    //max and min
+    cout << "Max and min: " << max(5, 10) << "\n";
+    cout << min(5, 10) << "\n";
+
+    //mathematical operations
+    cout << "These are mathematical operations made possible by the math library: " << "\n";
+    cout << sqrt(64) << "\n";
+    cout << round(2.6) << "\n"; //rounds  a number
+    cout << log(2) << "\n";
     
     return 0;
 }

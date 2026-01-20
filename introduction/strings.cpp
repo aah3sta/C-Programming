@@ -62,6 +62,9 @@ int main(){
     getline (cin, myName);
     cout << "Your name is: " << myName;
 
+    //C-style strings
+    char greeting2[] = "Hello" ;
+
     return 0;
 }
 

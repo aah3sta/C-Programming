@@ -75,11 +75,11 @@ int main(){
     }
     //using ||
     if (d > e || d >f){
-        cout << "At least one condition is true\n";
+        cout << "At least one condition is true.\n";
     }
     //using !
     if (!(e > d)){
-        cout << "e is NOT greater than d";
+        cout << "e is NOT greater than d.\n";
     }
 
     //REAL LIFE EXAMPLE
@@ -122,9 +122,9 @@ int main(){
     int num1 = 5;
 
     if (num1 % 2 == 0){
-        cout << num1 << "is even.\n";
+        cout << num1 << " is even.\n";
     } else {
-        cout << num1 << "is odd.\n";
+        cout << num1 << " is odd.\n";
     }
 
     return 0;

@@ -8,7 +8,7 @@ int main(){
         cout << "20 is greater than 18" << "\n";
     }
 
-    //programm to determine if a number is greater than or less than the other
+    //program to determine if a number is greater than or less than the other
     int x;
     cout << "Enter a number x: ";
     cin >> x;
@@ -110,7 +110,22 @@ int main(){
     //If a number is positive or negative
     int myNum = 10;
 
-    if (myNum > 0){}
+    if (myNum > 0){
+        cout << "The value is a positive number.\n";
+    } else if (myNum < 0){
+        cout << "The value is a negative number.\n";
+    } else {
+        cout << "The value is 0.\n";
+    }
+
+    //If a number is even or odd
+    int num1 = 5;
+
+    if (num1 % 2 == 0){
+        cout << num1 << "is even.\n";
+    } else {
+        cout << num1 << "is odd.\n";
+    }
 
     return 0;
 }

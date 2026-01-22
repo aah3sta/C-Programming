@@ -75,5 +75,23 @@ int main (){
         dice = dice + 1;
     }
 
+    //FOR loop
+    for (int a = 0; a < 7; a++){
+        cout << a << "\n";
+    }
+
+    //sum of numbers in the loop
+    int sum = 0;
+    for (int b = 1; b <=4; b++){
+        sum = sum + b;
+        cout << "The sum is: " << sum << "\n";
+    }
+
+    //countdown using for loop
+    for (int c = 3; c > 0; c--){
+        cout << c << "\n";
+    }
+    cout << "HAPPY NEW YEAR!\n";
+
     return 0;
 }

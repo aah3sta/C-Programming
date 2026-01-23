@@ -93,5 +93,13 @@ int main (){
     }
     cout << "HAPPY NEW YEAR!\n";
 
+    //NESTED FOR LOOP - inner loop is executed one time for each iteration of the outer loop
+    for (int f = 1; f <= 2; f++){
+        cout << "Outer: " << f << "\n"; //execute 2 times
+        for (int g = 1; g <= 3; g++){
+            cout << "Inner: " << g << "\n"; //execute 6 times (2 * 3)
+        }
+    }
+
     return 0;
 }

@@ -101,5 +101,31 @@ int main (){
         }
     }
 
+    //FOREACH LOOP - loops through elements in an array
+    int myNums[5] = {10, 20, 30, 40, 50};
+    for(int Num : myNums){
+        cout  << "Foreach loops: " << Num << "\n";
+    }
+
+    //Loop through a string
+    string word = "Hello";
+    for( char c : word){
+        cout << "Looping through a string: " << c << "\n";
+    }
+
+    //EXAMPLES
+    //powers of 2 up to 512
+    for (int l = 2; l <= 512; l*=2){
+        cout << "Powers of 2: " << l << "\n";
+    }
+
+    //multiplication table for the number 2
+    int value = 2;
+    int m;
+
+    for(m = 1; m <= 10; m++){
+        cout << value << " x " << m << " = " << value * m << "\n";
+    }
+
     return 0;
 }

@@ -127,5 +127,21 @@ int main (){
         cout << value << " x " << m << " = " << value * m << "\n";
     }
 
+    //BREAK - Used to jump out of a loop
+    for (int n = 0; n < 10; n++){
+        if (n == 4){
+            break;
+        }
+        cout << "Using a break statement: " << n << "\n";
+    }
+
+    //CONTINUE - Breaks one iteration in the loop i.e this one skips the value of 4
+    for (int p = 0; p < 10; p++){
+        if (p == 4){
+            continue;
+        }
+        cout << "Using a continue statement: " << p << "\n";
+    }
+
     return 0;
 }

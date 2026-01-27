@@ -49,7 +49,21 @@ int main(){
     vector<string> names = {"Esther", "Morgan", "Grace"};
 
     //adding an element to the vector
-    names.push_back("Barbie");    
+    names.push_back("Barbie");   
+    
+    //REAL LIFE EXAMPLES
+    //An array storong different ages
+    int ages[8] = {20, 22, 18, 35, 48, 26, 87, 70};
+
+    float avg, sum = 0;
+    int j;
+    //Get the length of the array
+    int length = sizeof(ages) / sizeof(ages[0]);
+    for (int age : ages){
+        sum += age;
+    }
+    avg = sum / length;
+    cout << "The average age is " << avg << "\n";
 
     return 0;
 }

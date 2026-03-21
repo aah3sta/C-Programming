@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include <vector>
 using namespace std;
 
@@ -29,13 +30,29 @@ int add_member(){
     member_details member;
     cout << "Kindly enter member details.\n";
     cout << "Enter Full Name: ";
-    cin >> member.name;
+    cin.ignore();
+    getline(cin, member.name);
 
     cout << "Age: ";
     cin >> member.age;
 
     cout << "University Name: ";
-    cin >> member.university;
+    cin.ignore();
+    getline(cin, member.university);
+
+    fstream member_db("astracode.txt", ios::app);
+
+    if (member_db.is_open()){
+    member_db << member.name << " | ";
+    member_db << member.age << " | ";
+    member_db << member.university << " | ";
+
+    member_db.close();
+    cout << "Member added successfully.\n";
+
+    } else {
+        cout << "Error! Could not open database file!.\n";
+    }
 }
 
 //exiting the program
@@ -80,12 +97,11 @@ int user_options(){
 
 
 /*
+//display saved members
 int display_members(){
-
+    fstream  member_db("astracode.txt");    
 }
-
 int search_member(){
-
 }
 */
  
